@@ -16,7 +16,26 @@
                     <view key="view" contentMode="scaleToFill" id="SS4-GM-BJK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nP9%K9ODRVqars+e8sNRmQ_thumb_6cec" translatesAutoresizingMaskIntoConstraints="NO" id="gKb-YC-j8U">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRr-bq-wBx">
+                                <rect key="frame" x="0.0" y="179" width="414" height="164"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FRr-bq-wBx" firstAttribute="top" secondItem="Zgk-3c-FT8" secondAttribute="top" constant="135" id="0Nf-pa-jxU"/>
+                            <constraint firstItem="gKb-YC-j8U" firstAttribute="bottom" secondItem="Zgk-3c-FT8" secondAttribute="bottom" id="41i-th-Usg"/>
+                            <constraint firstItem="gKb-YC-j8U" firstAttribute="leading" secondItem="Zgk-3c-FT8" secondAttribute="leading" id="6Kc-bD-hbn"/>
+                            <constraint firstItem="gKb-YC-j8U" firstAttribute="trailing" secondItem="Zgk-3c-FT8" secondAttribute="trailing" id="FZK-IZ-0YG"/>
+                            <constraint firstItem="FRr-bq-wBx" firstAttribute="trailing" secondItem="Zgk-3c-FT8" secondAttribute="trailing" id="dtF-K8-st9"/>
+                            <constraint firstItem="FRr-bq-wBx" firstAttribute="leading" secondItem="Zgk-3c-FT8" secondAttribute="leading" id="kC5-k4-fHI"/>
+                            <constraint firstItem="gKb-YC-j8U" firstAttribute="top" secondItem="Zgk-3c-FT8" secondAttribute="top" id="ozQ-6z-yof"/>
+                            <constraint firstItem="Zgk-3c-FT8" firstAttribute="bottom" secondItem="FRr-bq-wBx" secondAttribute="bottom" constant="470" id="ykp-OM-I4A"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Zgk-3c-FT8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Giving" image="following" selectedImage="following" id="MbJ-Ip-svg">
@@ -25,25 +44,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yu7-1T-Yjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1455" y="-327"/>
+            <point key="canvasLocation" x="-1455.072463768116" y="-327.45535714285711"/>
         </scene>
         <!--Sermons-->
         <scene sceneID="Lw8-E6-tm2">
             <objects>
-                <viewController id="ekt-TQ-Qhw" sceneMemberID="viewController">
+                <viewController id="ekt-TQ-Qhw" customClass="sermonView" customModule="WarrenAME" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o2Y-mc-Q0A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GcM-ee-f3I">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Dyp-Sj-4gV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sermons" image="play" selectedImage="play" id="YvY-oi-682">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="youtubeView" destination="GcM-ee-f3I" id="daJ-yO-heO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p3E-Qr-Dvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-684" y="-327"/>
+            <point key="canvasLocation" x="-684.05797101449275" y="-327.45535714285711"/>
         </scene>
         <!--Ministries-->
         <scene sceneID="6MI-Cg-ox6">
@@ -141,22 +174,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWR-Cw-hNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="124.6376811594203" y="-327.45535714285711"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="TaB-Kq-pVN">
-            <objects>
-                <viewController id="Ltd-mg-0K9" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="a3L-xi-wJL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="S8W-4W-L6I"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Hex-BE-0Ib"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eMP-ba-7DW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1036" y="-1068"/>
         </scene>
         <!--Events-->
         <scene sceneID="xyG-We-Mv1">
@@ -276,36 +293,17 @@
                         <segue destination="YkB-nU-8j0" kind="relationship" relationship="viewControllers" id="dUt-DE-cH7"/>
                         <segue destination="ekt-TQ-Qhw" kind="relationship" relationship="viewControllers" id="Hph-Yr-k7p"/>
                         <segue destination="ITj-ba-2UQ" kind="relationship" relationship="viewControllers" id="Z0j-f2-NeN"/>
-                        <segue destination="P5m-BL-ULR" kind="relationship" relationship="viewControllers" id="MXO-t0-3pg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHw-Cr-opa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1172" y="-1068"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="j0O-rA-1vZ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P5m-BL-ULR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" selectedImage="people" systemItem="more" id="NLK-W4-N36"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0c5-ye-1xn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Ltd-mg-0K9" kind="relationship" relationship="rootViewController" id="vd3-cU-cpB"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="925-4l-Kxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="126" y="-1068"/>
-        </scene>
     </scenes>
     <resources>
         <image name="calendar" width="30" height="30"/>
         <image name="following" width="30" height="30"/>
+        <image name="nP9%K9ODRVqars+e8sNRmQ_thumb_6cec" width="655" height="1199"/>
         <image name="people" width="30" height="30"/>
         <image name="play" width="30" height="30"/>
     </resources>

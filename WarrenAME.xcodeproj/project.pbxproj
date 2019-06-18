@@ -15,6 +15,8 @@
 		99BFE40E22B6D109002C2417 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BFE40D22B6D109002C2417 /* CollectionViewCell.swift */; };
 		99BFE41022B739FE002C2417 /* ministries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BFE40F22B739FE002C2417 /* ministries.swift */; };
 		99BFE41222B73BBB002C2417 /* CollectionViewMinistries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BFE41122B73BBB002C2417 /* CollectionViewMinistries.swift */; };
+		99D6204D22B9370B00B4CBBD /* sermonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D6204C22B9370B00B4CBBD /* sermonView.swift */; };
+		99D6205022B9398700B4CBBD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D6204F22B9398700B4CBBD /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		99BFE40D22B6D109002C2417 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		99BFE40F22B739FE002C2417 /* ministries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ministries.swift; sourceTree = "<group>"; };
 		99BFE41122B73BBB002C2417 /* CollectionViewMinistries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewMinistries.swift; sourceTree = "<group>"; };
+		99D6204C22B9370B00B4CBBD /* sermonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sermonView.swift; sourceTree = "<group>"; };
+		99D6204F22B9398700B4CBBD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D6205022B9398700B4CBBD /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,7 @@
 			children = (
 				99314FCD22B3F5A9003C28BC /* WarrenAME */,
 				99314FCC22B3F5A9003C28BC /* Products */,
+				99D6204E22B9398700B4CBBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +77,17 @@
 				99314FD722B3F5AB003C28BC /* Assets.xcassets */,
 				99314FD922B3F5AB003C28BC /* LaunchScreen.storyboard */,
 				99314FDC22B3F5AB003C28BC /* Info.plist */,
+				99D6204C22B9370B00B4CBBD /* sermonView.swift */,
 			);
 			path = WarrenAME;
+			sourceTree = "<group>";
+		};
+		99D6204E22B9398700B4CBBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99D6204F22B9398700B4CBBD /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +173,7 @@
 				99314FCF22B3F5A9003C28BC /* AppDelegate.swift in Sources */,
 				99BFE41022B739FE002C2417 /* ministries.swift in Sources */,
 				99BFE41222B73BBB002C2417 /* CollectionViewMinistries.swift in Sources */,
+				99D6204D22B9370B00B4CBBD /* sermonView.swift in Sources */,
 				99BFE40E22B6D109002C2417 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
