@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052523D87FDB1AED54990DA4 /* Pods_WarrenAME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A077A79C1B6D4706570261FB /* Pods_WarrenAME.framework */; };
 		99314FCF22B3F5A9003C28BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99314FCE22B3F5A9003C28BC /* AppDelegate.swift */; };
 		99314FD622B3F5A9003C28BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99314FD422B3F5A9003C28BC /* Main.storyboard */; };
 		99314FD822B3F5AB003C28BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99314FD722B3F5AB003C28BC /* Assets.xcassets */; };
@@ -17,9 +18,12 @@
 		99BFE41222B73BBB002C2417 /* CollectionViewMinistries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BFE41122B73BBB002C2417 /* CollectionViewMinistries.swift */; };
 		99D6204D22B9370B00B4CBBD /* sermonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D6204C22B9370B00B4CBBD /* sermonView.swift */; };
 		99D6205022B9398700B4CBBD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D6204F22B9398700B4CBBD /* WebKit.framework */; };
+		99D6205222B9703A00B4CBBD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99D6205122B9703A00B4CBBD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02C4F771F77A4F6896DC92B7 /* Pods-WarrenAME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarrenAME.debug.xcconfig"; path = "Target Support Files/Pods-WarrenAME/Pods-WarrenAME.debug.xcconfig"; sourceTree = "<group>"; };
+		676C7F8B678F0325188B844E /* Pods-WarrenAME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarrenAME.release.xcconfig"; path = "Target Support Files/Pods-WarrenAME/Pods-WarrenAME.release.xcconfig"; sourceTree = "<group>"; };
 		99314FCB22B3F5A9003C28BC /* WarrenAME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarrenAME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99314FCE22B3F5A9003C28BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99314FD522B3F5A9003C28BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,6 +37,8 @@
 		99BFE41122B73BBB002C2417 /* CollectionViewMinistries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewMinistries.swift; sourceTree = "<group>"; };
 		99D6204C22B9370B00B4CBBD /* sermonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sermonView.swift; sourceTree = "<group>"; };
 		99D6204F22B9398700B4CBBD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		99D6205122B9703A00B4CBBD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A077A79C1B6D4706570261FB /* Pods_WarrenAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WarrenAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,18 +47,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				99D6205022B9398700B4CBBD /* WebKit.framework in Frameworks */,
+				052523D87FDB1AED54990DA4 /* Pods_WarrenAME.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2791765B3B07CE5F39450123 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02C4F771F77A4F6896DC92B7 /* Pods-WarrenAME.debug.xcconfig */,
+				676C7F8B678F0325188B844E /* Pods-WarrenAME.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		99314FC222B3F5A9003C28BC = {
 			isa = PBXGroup;
 			children = (
 				99314FCD22B3F5A9003C28BC /* WarrenAME */,
 				99314FCC22B3F5A9003C28BC /* Products */,
 				99D6204E22B9398700B4CBBD /* Frameworks */,
+				2791765B3B07CE5F39450123 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +95,7 @@
 				99314FD922B3F5AB003C28BC /* LaunchScreen.storyboard */,
 				99314FDC22B3F5AB003C28BC /* Info.plist */,
 				99D6204C22B9370B00B4CBBD /* sermonView.swift */,
+				99D6205122B9703A00B4CBBD /* GoogleService-Info.plist */,
 			);
 			path = WarrenAME;
 			sourceTree = "<group>";
@@ -86,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				99D6204F22B9398700B4CBBD /* WebKit.framework */,
+				A077A79C1B6D4706570261FB /* Pods_WarrenAME.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99314FDF22B3F5AB003C28BC /* Build configuration list for PBXNativeTarget "WarrenAME" */;
 			buildPhases = (
+				16A82EC87414C64D4CB84060 /* [CP] Check Pods Manifest.lock */,
 				99314FC722B3F5A9003C28BC /* Sources */,
 				99314FC822B3F5A9003C28BC /* Frameworks */,
 				99314FC922B3F5A9003C28BC /* Resources */,
+				CECCCED335A8A4F4362696E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,12 +178,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				99314FDB22B3F5AB003C28BC /* LaunchScreen.storyboard in Resources */,
+				99D6205222B9703A00B4CBBD /* GoogleService-Info.plist in Resources */,
 				99314FD822B3F5AB003C28BC /* Assets.xcassets in Resources */,
 				99314FD622B3F5A9003C28BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16A82EC87414C64D4CB84060 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WarrenAME-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CECCCED335A8A4F4362696E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WarrenAME/Pods-WarrenAME-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WarrenAME/Pods-WarrenAME-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99314FC722B3F5A9003C28BC /* Sources */ = {
@@ -318,6 +391,7 @@
 		};
 		99314FE022B3F5AB003C28BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C4F771F77A4F6896DC92B7 /* Pods-WarrenAME.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WarrenAME/WarrenAME.entitlements;
@@ -338,6 +412,7 @@
 		};
 		99314FE122B3F5AB003C28BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676C7F8B678F0325188B844E /* Pods-WarrenAME.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WarrenAME/WarrenAME.entitlements;
